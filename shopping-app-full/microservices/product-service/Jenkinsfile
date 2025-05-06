@@ -1,0 +1,7 @@
+@Library('jenkins-shared-library') _
+
+cicdPipeline(
+    repo: 'https://github.com/your-org/product-service.git',
+    imageName: 'your-dockerhub-username/product-service',
+    dockerCreds: 'dockerhub-credentials-id'
+)
