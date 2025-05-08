@@ -1,0 +1,5 @@
+@Library('jenkins-shared-library') _
+
+build(imageName: 'cart-service', repoUrl: 'https://github.com/example/cart-service.git')
+sonarScan(projectKey: 'cart-service')
+deploy(serviceName: 'cart-deployment')

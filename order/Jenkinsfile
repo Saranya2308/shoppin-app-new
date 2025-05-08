@@ -1,0 +1,5 @@
+@Library('jenkins-shared-library') _
+
+build(imageName: 'order-service', repoUrl: 'https://github.com/example/order-service.git')
+sonarScan(projectKey: 'order-service')
+deploy(serviceName: 'order-deployment')
